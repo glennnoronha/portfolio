@@ -10,7 +10,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Glenn Noronha | Software Engineer & NCAA Baseball Player",
   description: "Personal portfolio of Glenn Noronha, Software Engineer and NCAA Baseball Player",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
