@@ -8,8 +8,8 @@ import { ThemeScript } from "@/components/theme-script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Glenn Noronha | Software Engineer",
-  description: "Personal portfolio of Glenn Noronha, Software Engineer",
+  title: "Glenn Noronha | Software Engineer & NCAA Baseball Player",
+  description: "Personal portfolio of Glenn Noronha, Software Engineer and NCAA Baseball Player",
 }
 
 export default function RootLayout({

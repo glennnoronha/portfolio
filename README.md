@@ -1,6 +1,8 @@
 # 🧑‍💻 My Personal Portfolio
 
-Welcome to my personal portfolio website! This site is built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **PNPM**, and it's designed to showcase who I am as a developer — including my projects, skills, and how to get in touch.
+Welcome to my personal portfolio website! This site is built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **PNPM**, and it's designed to showcase who I am as a developer, including my projects, skills, and how to get in touch.
+
+You can view my portfolio at https://glennnoronha.vercel.app/
 
 ## 🚀 Tech Stack
 
