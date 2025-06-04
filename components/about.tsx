@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { FileText } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 
 export function About() {
   return (
@@ -29,26 +29,28 @@ export function About() {
 
             <div className="md:col-span-2 space-y-6">
               <p className="text-lg text-muted-foreground">
-                I'm a Computer Science student at West Texas A&M University with
-                a strong academic record (GPA: 3.9) and an NCAA Baseball player.
-                My unique background has shaped me into a versatile professional
-                with technical expertise and strong teamwork abilities.
+                I graduated with a Computer Science degree from West Texas A&M
+                University with a 3.9 GPA while also competing as an NCAA
+                Baseball player. That experience shaped me into someone who
+                thrives under pressure, both on the field and in technical
+                environments.
               </p>
               <p className="text-lg text-muted-foreground">
-                My background in baseball has instilled in me exceptional
-                discipline, leadership, and analytical thinking skills that
-                translate directly to solving complex problems in data science
-                and software development. While I'm particularly passionate
-                about applying my skills in the baseball industry, these
-                qualities have prepared me to excel in any collaborative,
-                fast-paced environment.
+                Baseball taught me discipline, leadership, and sharp analytical
+                thinking — all of which carry over into how I approach data
+                science and software development. While I’m especially
+                passionate about bringing tech into the baseball world, I’m
+                well-prepared to contribute in any fast-paced, team-oriented
+                setting.
               </p>
               <p className="text-lg text-muted-foreground">
                 I specialize in software engineering, data analysis, and
-                full-stack development, with a particular interest in sports
-                technology and analytics. I'm graduating in May 2025 and seeking
-                opportunities where I can leverage my technical skills to create
-                impactful solutions.
+                full-stack development. I’ve developed full-stack web apps,
+                machine learning models, and AR tools, blending clean design
+                with real functionality. Below are my recent projects which
+                include MovieVerse, a React-based movie discovery app powered by
+                the TMDB API, and Protein Lens AR, an immersive learning
+                platform for visualizing protein structures on Meta Quest 3.
               </p>
               <div className="pt-4">
                 <Button variant="outline" className="gap-2" asChild>

@@ -24,7 +24,7 @@ export function Education() {
                 </div>
                 <CardDescription className="flex items-center">
                   <Calendar className="h-4 w-4 mr-2" />
-                  Graduation: May 2025
+                  Graduated: May 2025
                 </CardDescription>
               </div>
             </CardHeader>
@@ -56,7 +56,7 @@ export function Education() {
                     </h4>
                     <ul className="list-disc pl-5 mt-2 space-y-1 text-muted-foreground">
                       <li>NCAA Division II Baseball Player</li>
-                      <li>Team Captain</li>
+                      <li>Third-Team All-Conference</li>
                       <li>Maintained excellence in both academics and athletics</li>
                     </ul>
                   </div>

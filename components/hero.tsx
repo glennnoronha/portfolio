@@ -9,21 +9,23 @@ export function Hero() {
         <div className="grid gap-8 items-center">
           <div className="flex flex-col justify-center space-y-6 text-center">
             <div className="space-y-2">
-              <p className="text-muted-foreground font-medium">Hi, my name is</p>
+              <p className="text-muted-foreground font-medium">
+                Hi, my name is
+              </p>
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl xl:text-7xl/none text-primary">
                 Glenn Noronha
               </h1>
               <h2 className="text-3xl sm:text-4xl text-muted-foreground font-bold">
-                Software Engineer & NCAA Baseball Player
+                Software Engineer
               </h2>
             </div>
 
             <div className="max-w-[700px] space-y-4">
               <p className="text-muted-foreground text-lg">
-                I develop innovative software solutions and data-driven
-                applications with a passion for sports technology. My experience
-                as an athlete gives me a unique perspective on building
-                impactful digital products.
+                I’m a software engineer and data analyst who loves turning ideas
+                into interactive, user-friendly apps. I enjoy solving real problems with code.
+                My background as a former student-athlete gives me a strong work ethic
+                and a team-first mindset.
               </p>
             </div>
 
@@ -60,10 +62,7 @@ export function Hero() {
               >
                 <Linkedin className="h-6 w-6 hover:text-primary transition-colors" />
               </a>
-              <a
-                href="mailto:glenn.noronha@yahoo.com"
-                aria-label="Email"
-              >
+              <a href="mailto:glenn.noronha@yahoo.com" aria-label="Email">
                 <Mail className="h-6 w-6 hover:text-primary transition-colors" />
               </a>
             </div>

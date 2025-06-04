@@ -118,3 +118,12 @@
   @apply border-primary/50 shadow-lg shadow-primary/10;
   transform: translateY(-5px);
 }
+
+.project-card img,
+.project-card .next-image-wrapper {
+  @apply rounded-lg;
+}
+
+.project-card .next-image-wrapper img {
+  @apply rounded-lg;
+}
