@@ -121,7 +121,6 @@
 
 .project-card img,
 .project-card .next-image-wrapper {
-  @apply rounded-lg;
 }
 
 .project-card .next-image-wrapper img {

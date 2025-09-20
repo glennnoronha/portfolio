@@ -1,33 +1,35 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink, Github, Clock, CheckCircle } from "lucide-react";
 
 export function Projects() {
   const projects = [
     {
-      title: "Bar J",
+      title: "Bar J Services",
       description:
-        "A movie discovery app where users can search for movies, view trailers, and explore detailed movie info, all in a sleek, responsive interface.",
-      image: "/MovieVerse.png?height=400&width=600",
-      tags: ["React", "Tailwind CSS", "TMDB API", "Supabase", "Vite"],
-      liveUrl: "https://movieverse-drab.vercel.app",
-      githubUrl: "https://github.com/glennnoronha/movieverse",
+        "A professional services website built for Bar J Services through my role at Andrews & Associates IT Solutions. The site highlights septic systems, site planning, and excavation work in a clear, modern, and responsive layout.",
+      image: "/barJ.png",
+      tags: ["WordPress", "Elementor", "Custom CSS", "Responsive Design"],
+      liveUrl: "https://barjservices.aandadev.com",
+      githubUrl: null, // private work project
+      status: "live",
       details: [
-        "Built with React and styled using Tailwind CSS for a clean, responsive design",
-        "Integrated TMDB API to fetch movie data including trailers, genres, and ratings",
-        "Implemented client-side routing with React Router and fast builds with Vite",
-        "Used Supabase to track and rank trending search terms",
-        "Focused on user experience with debounced search, modal previews, and mobile optimization",
+        "Developed and launched during my work at Andrews & Associates IT Solutions",
+        "Created a responsive WordPress site tailored to the client's service offerings",
+        "Customized Elementor layouts and added advanced styling with CSS for brand consistency",
+        "Migrated content from the old site and optimized for performance and SEO",
+        "Integrated service detail pages, calls-to-action, and contact forms to drive leads",
       ],
     },
     {
       title: "MovieVerse",
       description:
         "A movie discovery app where users can search for movies, view trailers, and explore detailed movie info, all in a sleek, responsive interface.",
-      image: "/MovieVerse.png?height=400&width=600",
+      image: "/MovieVerse.png",
       tags: ["React", "Tailwind CSS", "TMDB API", "Supabase", "Vite"],
       liveUrl: "https://movieverse-drab.vercel.app",
       githubUrl: "https://github.com/glennnoronha/movieverse",
+      status: "live",
       details: [
         "Built with React and styled using Tailwind CSS for a clean, responsive design",
         "Integrated TMDB API to fetch movie data including trailers, genres, and ratings",
@@ -40,7 +42,7 @@ export function Projects() {
       title: "AI-Based Crop Yield Prediction",
       description:
         "A machine learning project using real-world data from FAOSTAT and NASA to predict crop yields and identify the key factors influencing agricultural productivity.",
-      image: "/yield.png?height=400&width=600",
+      image: "/yield.png",
       tags: [
         "Python",
         "scikit-learn",
@@ -48,8 +50,9 @@ export function Projects() {
         "Data Analysis",
         "Machine Learning",
       ],
-      liveUrl: "#",
+      liveUrl: null,
       githubUrl: "https://github.com/glennnoronha/ml-crop-yield-analysis",
+      status: "code",
       details: [
         "Collected and merged over 14,000 rows of raw data from FAOSTAT and NASA POWER APIs",
         "Engineered a unified dataset combining pesticide use, weather stats, and crop type for 150+ countries",
@@ -62,10 +65,11 @@ export function Projects() {
       title: "Protein Lens AR",
       description:
         "An augmented reality platform for visualizing complex protein structures and biomechanics concepts in an immersive, interactive environment.",
-      image: "/proteinlens.png?height=400&width=600",
+      image: "/proteinlens.png",
       tags: ["Unity", "Meta XR SDK", "C#", "Blender", "AR"],
-      liveUrl: "#",
+      liveUrl: null,
       githubUrl: "https://github.com/LKiker/MolecularLensAR",
+      status: "developed",
       details: [
         "Developed an augmented reality platform with applications for sports biomechanics",
         "Utilized Unity, C#, and 3D modeling to create interactive visualizations",
@@ -79,8 +83,9 @@ export function Projects() {
         "A responsive, modern web portfolio built with Next.js, Tailwind CSS, and TypeScript to showcase my software engineering work, baseball analytics projects, and technical skills.",
       image: "/portfolio-thumbnail.jpg",
       tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
-      liveUrl: "https://your-portfolio-domain.com", //
+      liveUrl: "https://your-portfolio-domain.com",
       githubUrl: "https://github.com/glennnoronha/porfolio",
+      status: "live",
       details: [
         "Designed and built a fully responsive personal portfolio to highlight my projects and skills",
         "Used Next.js for performance and routing, with Tailwind CSS for rapid UI development",
@@ -92,10 +97,11 @@ export function Projects() {
       title: "Coming Soon",
       description:
         "A new project is currently in the works! Stay tuned for updates on my next build.",
-      image: "/project.png",
+      image: "",
       tags: ["In Progress", "TBD"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: null,
+      githubUrl: null,
+      status: "development",
       details: [
         "This project is under active development.",
         "More details will be shared soon, including a live demo and repository.",
@@ -107,59 +113,109 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="pt-0 pb-0 md:pt-4 md:pb-4 bg-secondary/50"
+      className="py-10 bg-gradient-to-br from-background to-muted/30"
     >
       <div className="section-container">
-        <div className="flex flex-col space-y-12">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              <span className="gradient-text">Projects</span>
-            </h2>
-            <div className="w-16 h-1 bg-primary"></div>
-            <p className="text-lg text-muted-foreground max-w-[800px]">
-              Here are some of my recent projects showcasing my skills.
+        <div className="flex flex-col space-y-16">
+          {/* Header */}
+          <div className="text-center space-y-6">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+                <span className="gradient-text">Featured Projects</span>
+              </h2>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+            </div>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              A showcase of my recent work spanning web development, machine
+              learning, and augmented reality applications.
             </p>
           </div>
 
-          <div className="grid gap-8">
+          {/* Projects Grid */}
+          <div className="grid md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="grid md:grid-cols-5 gap-0">
-                  <div className="md:col-span-2 w-full h-full p-4 md:pl-6 flex items-center">
-                    <div className="rounded-lg overflow-hidden w-full">
-                      <Image
-                        src={project.image || "/placeholder.svg"}
+              <div key={index} className={`project-card group`}>
+                <div className="grid gap-0 min-h-[500px]">
+                  {/* Image Section */}
+                  <div className="relative overflow-hidden bg-gradient-to-br from-muted/50 to-muted/80">
+                    <div className="relative aspect-[16/9] w-full">
+                      <img
+                        src={project.image || "/project.png"}
                         alt={project.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-full object-contain"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                        loading={index > 1 ? "lazy" : "eager"}
                       />
+                    </div>
+
+                    {/* Status Badge */}
+                    <div className="absolute top-4 right-4">
+                      <Badge
+                        variant={
+                          project.status === "live" ? "default" : "secondary"
+                        }
+                        className="gap-1.5"
+                      >
+                        {project.status === "live" ? (
+                          <CheckCircle className="h-3 w-3" />
+                        ) : (
+                          <Clock className="h-3 w-3" />
+                        )}
+                        {project.status === "live" ? "Live" : project.status}
+                      </Badge>
                     </div>
                   </div>
 
-                  <div className="md:col-span-3 p-6 md:p-8 flex flex-col h-full">
-                    <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-muted-foreground mb-4">
-                      {project.description}
-                    </p>
+                  {/* Content Section */}
+                  <div
+                    className={`p-8 lg:p-12 flex flex-col justify-center space-y-6`}
+                  >
+                    <div className="space-y-4">
+                      <h3 className="text-3xl font-bold tracking-tight group-hover:text-primary transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed">
+                        {project.description}
+                      </p>
+                    </div>
 
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, tagIndex) => (
-                        <span
+                        <Badge
                           key={tagIndex}
-                          className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+                          variant="outline"
+                          className="text-xs font-medium bg-primary/5 border-primary/20 text-primary hover:bg-primary/10 transition-colors duration-200"
                         >
                           {tag}
-                        </span>
+                        </Badge>
                       ))}
                     </div>
 
-                    <div className="mt-auto flex gap-4">
-                      {project.githubUrl !== "#" && (
+                    {/* Details List */}
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
+                        Key Highlights
+                      </h4>
+                      <ul className="space-y-2">
+                        {project.details.slice(0, 3).map((detail, dIndex) => (
+                          <li
+                            key={dIndex}
+                            className="text-sm text-muted-foreground flex items-start gap-2"
+                          >
+                            <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                            <span className="leading-relaxed">{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-4 pt-4">
+                      {project.githubUrl && (
                         <Button
                           variant="outline"
-                          size="sm"
-                          className="gap-2"
+                          size="lg"
+                          className="gap-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/btn"
                           asChild
                         >
                           <a
@@ -167,20 +223,24 @@ export function Projects() {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Github className="h-4 w-4" />
-                            Code
+                            <Github className="h-4 w-4 group-hover/btn:rotate-12 transition-transform duration-300" />
+                            View Code
                           </a>
                         </Button>
                       )}
 
-                      {project.liveUrl !== "#" && (
-                        <Button size="sm" className="gap-2" asChild>
+                      {project.liveUrl && (
+                        <Button
+                          size="lg"
+                          className="gap-2 group/btn bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transition-all duration-300"
+                          asChild
+                        >
                           <a
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <ExternalLink className="h-4 w-4" />
+                            <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
                             Live Demo
                           </a>
                         </Button>

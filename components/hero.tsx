@@ -1,35 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative py-40 flex items-center justify-center">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="grid gap-8 items-center">
-          <div className="flex flex-col justify-center space-y-6 text-center">
-            <div className="space-y-2">
-              <p className="text-muted-foreground font-medium">
-                Hi, my name is
-              </p>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl xl:text-7xl/none text-primary">
-                Glenn Noronha
-              </h1>
-              <h2 className="text-3xl sm:text-4xl text-muted-foreground font-bold">
-                Software Engineer
-              </h2>
-            </div>
+    <section className="relative overflow-hidden py-24 sm:py-28">
+      {/* subtle background accents */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+      </div>
 
-            <div className="max-w-[700px] space-y-4">
-              <p className="text-muted-foreground text-lg">
-                I’m a software engineer and data analyst who loves turning ideas
-                into interactive, user-friendly apps. I enjoy solving real problems with code.
-                My background as a former student-athlete gives me a strong work ethic
-                and a team-first mindset.
-              </p>
-            </div>
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 text-center items-center gap-10 lg:grid-cols-12 lg:text-start">
+          {/* text */}
+          <div className="order-2 lg:order-1 lg:col-span-6">
+            <p className="text-sm font-medium text-muted-foreground">
+              Hi, my name is
+            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <h1 className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-7xl">
+              Glenn Noronha
+            </h1>
+
+            <h2 className="mt-3 text-2xl font-semibold text-muted-foreground sm:text-3xl">
+              Software Engineer
+            </h2>
+
+            <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">
+              I’m a software engineer and data analyst who turns ideas into
+              useful, clean interfaces. I like building real products, keeping
+              things simple, and shipping.
+            </p>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="#projects">
                 <Button size="lg" className="w-full sm:w-auto">
                   View my projects
@@ -45,35 +50,65 @@ export function Hero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex justify-center gap-6 mt-6 text-muted-foreground">
+
+            <div className="mt-6 flex items-center justify-center sm:justify-start gap-5 text-muted-foreground">
               <a
                 href="https://github.com/glennnoronha"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                className="transition-colors hover:text-primary"
               >
-                <Github className="h-6 w-6 hover:text-primary transition-colors" />
+                <Github className="h-6 w-6" />
               </a>
               <a
                 href="https://www.linkedin.com/in/glenn-noronha-314177161/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                className="transition-colors hover:text-primary"
               >
-                <Linkedin className="h-6 w-6 hover:text-primary transition-colors" />
+                <Linkedin className="h-6 w-6" />
               </a>
-              <a href="mailto:glenn.noronha@yahoo.com" aria-label="Email">
-                <Mail className="h-6 w-6 hover:text-primary transition-colors" />
+              <a
+                href="mailto:glenn.noronha@yahoo.com"
+                aria-label="Email"
+                className="transition-colors hover:text-primary"
+              >
+                <Mail className="h-6 w-6" />
               </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <Link href="#about" aria-label="Scroll down">
-          <ArrowDown className="h-6 w-6 text-muted-foreground" />
-        </Link>
+          {/* photo */}
+          <div className="order-1 lg:order-2 lg:col-span-6">
+            <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+              <div className="relative rounded-2xl bg-gradient-to-br from-primary/40 to-transparent p-1">
+                <div className="flex h-full items-center">
+                  <Image
+                    src="/headshot.jpeg"
+                    alt="Headshot of Glenn Noronha"
+                    width={650}
+                    height={800}
+                    priority
+                    className="h-full w-auto max-h-full rounded-xl object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* scroll hint */}
+        <div className="mt-16 flex justify-center">
+          <Link
+            href="#about"
+            aria-label="Scroll down"
+            className="animate-bounce"
+          >
+            <ArrowDown className="h-6 w-6 text-muted-foreground" />
+          </Link>
+        </div>
       </div>
     </section>
   );
