@@ -5,6 +5,22 @@ import Image from "next/image";
 export function Projects() {
   const projects = [
     {
+      title: "Bar J",
+      description:
+        "A movie discovery app where users can search for movies, view trailers, and explore detailed movie info, all in a sleek, responsive interface.",
+      image: "/MovieVerse.png?height=400&width=600",
+      tags: ["React", "Tailwind CSS", "TMDB API", "Supabase", "Vite"],
+      liveUrl: "https://movieverse-drab.vercel.app",
+      githubUrl: "https://github.com/glennnoronha/movieverse",
+      details: [
+        "Built with React and styled using Tailwind CSS for a clean, responsive design",
+        "Integrated TMDB API to fetch movie data including trailers, genres, and ratings",
+        "Implemented client-side routing with React Router and fast builds with Vite",
+        "Used Supabase to track and rank trending search terms",
+        "Focused on user experience with debounced search, modal previews, and mobile optimization",
+      ],
+    },
+    {
       title: "MovieVerse",
       description:
         "A movie discovery app where users can search for movies, view trailers, and explore detailed movie info, all in a sleek, responsive interface.",
