@@ -82,16 +82,16 @@ export function Hero() {
 
           {/* photo */}
           <div className="order-1 md:order-2 md:col-span-6">
-            <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-auto">
-              <div className="relative rounded-2xl bg-gradient-to-br from-primary/40 to-transparent p-1 h-full">
-                <div className="flex h-full items-center justify-center overflow-hidden rounded-xl">
+            <div className="mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-full md:h-auto md:max-w-md lg:max-w-lg">
+              <div className="relative rounded-full md:rounded-2xl bg-gradient-to-br from-primary/40 to-transparent p-1 h-full">
+                <div className="flex h-full items-center justify-center overflow-hidden rounded-full md:rounded-xl">
                   <Image
                     src="/headshot.jpeg"
                     alt="Headshot of Glenn Noronha"
                     width={650}
                     height={800}
                     priority
-                    className="h-full w-full rounded-xl object-cover object-top"
+                    className="h-full w-full rounded-full md:rounded-xl object-cover object-top"
                   />
                 </div>
               </div>
