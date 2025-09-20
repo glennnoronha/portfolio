@@ -29,9 +29,14 @@ export function Hero() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">
-              I'm a software engineer and data analyst who turns ideas into
-              useful, clean interfaces. I like building real products, keeping
-              things simple, and shipping.
+              <span className="md:hidden">
+                I build clean, useful products.
+              </span>
+              <span className="hidden md:block">
+                I'm a software engineer and data analyst who turns ideas into
+                useful, clean interfaces. I like building real products, keeping
+                things simple, and shipping.
+              </span>
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
