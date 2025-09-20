@@ -5,6 +5,54 @@ import { ExternalLink, Github, Clock, CheckCircle } from "lucide-react";
 export function Projects() {
   const projects = [
     {
+      title: "Panhandle Pro Air",
+      description:
+        "A professional HVAC services website built for Panhandle Pro Air. Features comprehensive service information for heating, cooling, and air quality solutions with a clean, trustworthy design focused on customer comfort and reliability.",
+      image: "/panhandle-pro-air.png",
+      tags: [
+        "WordPress",
+        "Custom Theme",
+        "PHP",
+        "Responsive Design",
+        "HVAC Services",
+      ],
+      liveUrl: "https://panhandleproair.aandadev.com",
+      githubUrl: null, // client project
+      status: "live",
+      details: [
+        "Developed a professional WordPress site with custom theme for a local HVAC contractor",
+        "Created detailed service pages for heating, cooling, maintenance, and air quality services",
+        "Built responsive layouts from scratch using PHP, HTML, CSS, and JavaScript",
+        "Designed trust-building elements including certifications, testimonials, and service guarantees",
+        "Integrated contact forms and service request functionality for lead generation",
+        "Optimized for local SEO to help customers in the Panhandle region find HVAC services",
+      ],
+    },
+    {
+      title: "Amarillo Dog Boarding",
+      description:
+        "A warm and professional pet care website built for Amarillo Dog Boarding. Features service information, pricing, and easy booking for dog boarding, daycare, and grooming services with a friendly, trustworthy design.",
+      image: "/amarillo-dog-boarding.png",
+      tags: [
+        "WordPress",
+        "Custom Theme",
+        "PHP",
+        "Responsive Design",
+        "Pet Services",
+      ],
+      liveUrl: "https://amarillodogboarding.aandadev.com",
+      githubUrl: null, // client project
+      status: "live",
+      details: [
+        "Developed a user-friendly WordPress site with a custom theme for a local pet boarding business",
+        "Created intuitive service pages showcasing boarding, daycare, and grooming options",
+        "Built responsive layouts from scratch using PHP, HTML, CSS, and JavaScript",
+        "Designed trust-focused UI elements including testimonials and facility highlights",
+        "Integrated contact forms and booking information to streamline customer inquiries",
+        "Optimized for local SEO to help pet owners in Amarillo find services easily",
+      ],
+    },
+    {
       title: "Bar J Services",
       description:
         "A professional services website built for Bar J Services through my role at Andrews & Associates IT Solutions. The site highlights septic systems, site planning, and excavation work in a clear, modern, and responsive layout.",
@@ -113,7 +161,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="py-10 bg-gradient-to-br from-background to-muted/30"
+      className=" bg-gradient-to-br from-background to-muted/30"
     >
       <div className="section-container">
         <div className="flex flex-col space-y-16">
@@ -167,7 +215,7 @@ export function Projects() {
 
                   {/* Content Section */}
                   <div
-                    className={`p-8 lg:p-12 flex flex-col justify-center space-y-6`}
+                    className={`p-8 lg:px-10 flex flex-col justify-center space-y-6`}
                   >
                     <div className="space-y-4">
                       <h3 className="text-3xl font-bold tracking-tight group-hover:text-primary transition-colors duration-300">
