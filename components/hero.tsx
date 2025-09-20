@@ -13,14 +13,14 @@ export function Hero() {
       </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 text-center items-center gap-10 lg:grid-cols-12 lg:text-start">
+        <div className="grid grid-cols-1 text-center items-center gap-10 md:grid-cols-12 md:text-start">
           {/* text */}
-          <div className="order-2 lg:order-1 lg:col-span-6">
+          <div className="order-2 md:order-1 md:col-span-6">
             <p className="text-sm font-medium text-muted-foreground">
               Hi, my name is
             </p>
 
-            <h1 className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-7xl">
+            <h1 className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-7xl">
               Glenn Noronha
             </h1>
 
@@ -29,7 +29,7 @@ export function Hero() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">
-              I’m a software engineer and data analyst who turns ideas into
+              I'm a software engineer and data analyst who turns ideas into
               useful, clean interfaces. I like building real products, keeping
               things simple, and shipping.
             </p>
@@ -51,7 +51,7 @@ export function Hero() {
               </Link>
             </div>
 
-            <div className="mt-6 flex items-center justify-center sm:justify-start gap-5 text-muted-foreground">
+            <div className="mt-6 flex items-center justify-center md:justify-start gap-5 text-muted-foreground">
               <a
                 href="https://github.com/glennnoronha"
                 target="_blank"
@@ -81,17 +81,17 @@ export function Hero() {
           </div>
 
           {/* photo */}
-          <div className="order-1 lg:order-2 lg:col-span-6">
-            <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-              <div className="relative rounded-2xl bg-gradient-to-br from-primary/40 to-transparent p-1">
-                <div className="flex h-full items-center">
+          <div className="order-1 md:order-2 md:col-span-6">
+            <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-auto">
+              <div className="relative rounded-2xl bg-gradient-to-br from-primary/40 to-transparent p-1 h-full">
+                <div className="flex h-full items-center justify-center overflow-hidden rounded-xl">
                   <Image
                     src="/headshot.jpeg"
                     alt="Headshot of Glenn Noronha"
                     width={650}
                     height={800}
                     priority
-                    className="h-full w-auto max-h-full rounded-xl object-cover"
+                    className="h-full w-full rounded-xl object-cover object-top"
                   />
                 </div>
               </div>
