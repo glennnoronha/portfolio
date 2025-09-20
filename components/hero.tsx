@@ -13,7 +13,7 @@ export function Hero() {
       </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 text-center items-center gap-10 md:grid-cols-12 md:text-start">
+        <div className="grid grid-cols-1 text-center items-center gap-5 md:grid-cols-12 md:text-start">
           {/* text */}
           <div className="order-2 md:order-1 md:col-span-6">
             <p className="text-sm font-medium text-muted-foreground">
@@ -28,7 +28,7 @@ export function Hero() {
               Software Engineer
             </h2>
 
-            <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">
+            <p className="mt-3 max-w-xl text-base leading-7 text-muted-foreground">
               <span className="md:hidden">
                 I build clean, useful products.
               </span>
