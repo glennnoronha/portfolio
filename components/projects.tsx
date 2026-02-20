@@ -16,7 +16,7 @@ export function Projects() {
         "Responsive Design",
         "HVAC Services",
       ],
-      liveUrl: "https://panhandleproair.aandadev.com",
+      liveUrl: "https://panhandleproair.com",
       githubUrl: null, // client project
       status: "live",
       details: [
@@ -40,7 +40,7 @@ export function Projects() {
         "Responsive Design",
         "Pet Services",
       ],
-      liveUrl: "https://amarillodogboarding.aandadev.com",
+      liveUrl: "https://amarillodogboarding.com",
       githubUrl: null, // client project
       status: "live",
       details: [
@@ -58,7 +58,7 @@ export function Projects() {
         "A professional services website built for Bar J Services through my role at Andrews & Associates IT Solutions. The site highlights septic systems, site planning, and excavation work in a clear, modern, and responsive layout.",
       image: "/barJ.png",
       tags: ["WordPress", "Elementor", "Custom CSS", "Responsive Design"],
-      liveUrl: "https://barjservices.aandadev.com",
+      liveUrl: "https://barjservices.com",
       githubUrl: null, // private work project
       status: "live",
       details: [
@@ -131,7 +131,7 @@ export function Projects() {
         "A responsive, modern web portfolio built with Next.js, Tailwind CSS, and TypeScript to showcase my software engineering work, baseball analytics projects, and technical skills.",
       image: "/portfolio-thumbnail.jpg",
       tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
-      liveUrl: "https://your-portfolio-domain.com",
+      liveUrl: "https://glennnoronha.vercel.app",
       githubUrl: "https://github.com/glennnoronha/porfolio",
       status: "live",
       details: [
