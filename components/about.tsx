@@ -54,6 +54,10 @@ export function About() {
               </p>
               <div className="pt-4">
                 <Button variant="outline" className="gap-2" asChild>
+                  <a href="/glenn_resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <FileText className="h-4 w-4" />
+                    View Resume
+                  </a>
                   <a href="/glenn_resume.pdf" download>
                     <FileText className="h-4 w-4" />
                     Download Resume
