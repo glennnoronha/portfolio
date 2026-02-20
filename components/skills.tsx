@@ -12,7 +12,7 @@ export function Skills() {
     {
       title: "Programming Languages",
       icon: <Terminal className="h-8 w-8" />,
-      skills: ["Python", "JavaScript", "C#", "Java", "C++", "SQL", "R"],
+      skills: ["Python", "JavaScript", "SQL", "R", "PHP"],
     },
     {
       title: "Data Science & Analytics",
