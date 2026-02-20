@@ -52,13 +52,22 @@ export function About() {
                 the TMDB API, and Protein Lens AR, an immersive learning
                 platform for visualizing protein structures on Meta Quest 3.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 flex gap-3">
                 <Button variant="outline" className="gap-2" asChild>
-                  <a href="/glenn_resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href="/glenn_resume.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                     <FileText className="h-4 w-4" />
                     View Resume
                   </a>
-                  <a href="/glenn_resume.pdf" download>
+                </Button>
+                <Button variant="outline" className="gap-2" asChild>
+                  <a 
+                    href="/glenn_resume.pdf" 
+                    download
+                  >
                     <FileText className="h-4 w-4" />
                     Download Resume
                   </a>
